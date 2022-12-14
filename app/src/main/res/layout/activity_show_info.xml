@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ShowInfoActivity">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:text="To do description"
+            android:textStyle="bold"
+            android:textColor="#FF6200EE"
+            android:textSize="22sp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/description"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#454444"
+                android:text="description description description description description description "/>
+        </ScrollView>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="start"
+            android:layout_height="40dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/flag_image"
+                android:src="@drawable/flag__4_"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Urgent"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/priority"
+                android:textSize="24sp"
+                android:textColor="#FF6200EE"
+                android:textStyle="italic"
+                android:layout_marginStart="15dp"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FF6200EE"
+                android:layout_margin="5dp"
+                android:text="To do create date: "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#424141"
+                android:id="@+id/tv_create_date"
+                android:layout_margin="5dp"
+                android:text="06.12.2022 "/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FF6200EE"
+
+                android:layout_margin="5dp"
+                android:text="To do deadline: "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#424141"
+                android:id="@+id/tv_deadline"
+                android:layout_margin="5dp"
+                android:text="06.01.2023 "/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Open"
+                android:buttonTint="#FF6200EE"
+                android:textSize="22sp"
+                android:id="@+id/btn_open"
+                android:tag="Open" />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Development"
+                android:buttonTint="#FF6200EE"
+                android:textSize="22sp"
+                android:id="@+id/btn_development"
+                android:tag="Development" />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Uploading"
+                android:buttonTint="#FF6200EE"
+                android:textSize="22sp"
+                android:id="@+id/btn_uploading"
+                android:tag="Uploading" />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reject"
+                android:buttonTint="#FF6200EE"
+                android:textSize="22sp"
+                android:id="@+id/btn_reject"
+                android:tag="Reject" />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Closed"
+                android:buttonTint="#FF6200EE"
+                android:textSize="22sp"
+                android:id="@+id/btn_closed"
+                android:tag="Closed" />
+        </RadioGroup>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20dp"
+        android:text="Save"
+        android:id="@+id/btn_save"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
